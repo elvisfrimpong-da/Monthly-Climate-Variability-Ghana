@@ -68,7 +68,7 @@ The analysis follows a structured research workflow:
 ## Tools and Technologies
 
 - **Microsoft Excel** – Data cleaning and restructuring  
-- **R / RStudio** – Exploratory analysis and statistical testing  
+- **rStudio** – Exploratory analysis and statistical testing  
 - **Python** – Predictive modeling and trend analysis  
 - **GitHub** – Version control and reproducibility  
 
@@ -97,4 +97,4 @@ This project demonstrates practical research and programming skills relevant to 
 ## Author
 
 **Elvis Frimpong**  
-Agricultural Engineer | Data Analyst  
+Agricultural Data Scientist  
