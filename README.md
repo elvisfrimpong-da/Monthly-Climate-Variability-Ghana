@@ -1,100 +1,158 @@
-# Monthly Climate Variability in Ghana
+# Rainfall Variability and Prediction Analysis in Ghana
 
-This project presents a statistical and exploratory analysis of monthly rainfall and temperature patterns in Ghana using satellite-derived climate data. The study focuses on seasonal and interannual variability with direct relevance to rain-fed agricultural decision-making.
-
----
-
-## Project Objectives
-
-The main objectives of this project are to:
-
-- Examine monthly and seasonal variability in rainfall and temperature  
-- Explore interannual rainfall patterns during agriculturally important periods  
-- Prepare climate data for statistical testing and predictive modeling  
-- Demonstrate applied skills in data cleaning, analysis, and research reporting  
+## Overview
+This project presents a comprehensive analysis of rainfall patterns in Ghana using statistical methods, climate indices, and predictive modeling. The goal is to understand seasonal variability, detect trends, and explore the potential for rainfall prediction to support agricultural and environmental decision-making.
 
 ---
 
-## Data Description
-
-### Raw Data
-
-The raw dataset was downloaded from the **NASA POWER (Prediction of Worldwide Energy Resources)** database.  
-It contains monthly climate observations for Ghana and has been preserved in its original format without modification.
-
-**File:**
-- `Raw_Dataset.xlsx`
-
-The raw data are retained to ensure transparency and reproducibility.
+##  Objectives
+- Analyze monthly rainfall trends and seasonal variability
+- Test for statistically significant differences in rainfall across months
+- Identify wet and dry periods using climate indices
+- Evaluate rainfall variability and concentration patterns
+- Explore the relationship between rainfall and temperature
+- Develop a predictive model for future rainfall estimation
 
 ---
 
-### Processed Data
-
-The processed dataset contains cleaned and analysis-ready climate data derived from the raw source. Data preparation involved restructuring the original wide-format data into a tidy, long-format structure suitable for statistical analysis.
-
-**File:**
-- `ghana_weather_final.csv`
-
-The processed dataset includes the following variables:
-
-- `Year` – Observation year  
-- `Month` – Month name  
-- `Month_Num` – Numeric month indicator (1–12)  
-- `Rainfall_mm` – Monthly total rainfall (mm)  
-- `Avg_Temp` – Monthly average air temperature (°C)  
-- `Max_Temp` – Monthly maximum air temperature (°C)  
+## Dataset
+The dataset consists of **180 monthly observations** of climate data in Ghana, including:
+- Rainfall (mm)
+- Average Temperature (°C)
+- Maximum Temperature (°C)
+- Year and Month information
 
 ---
 
-## Methodology Overview
-
-The analysis follows a structured research workflow:
-
-1. **Data Cleaning and Restructuring**  
-   Raw climate data were cleaned and transformed using Microsoft Excel to ensure consistency, accuracy, and suitability for analysis.
-
-2. **Exploratory Data Analysis (EDA)**  
-   Visual and descriptive analysis was conducted to assess seasonal and interannual variability in rainfall and temperature.
-
-3. **Statistical Analysis**  
-   One-way Analysis of Variance (ANOVA) is applied to evaluate whether significant differences exist in mean rainfall across months.
-
-4. **Predictive Modeling (Planned)**  
-   Regression-based models will be implemented in Python to explore temporal patterns and demonstrate predictive analysis techniques.
+## 🔍 Exploratory Data Analysis (EDA)
+- Examined rainfall distribution across months using boxplots
+- Identified strong **seasonal rainfall patterns**
+- Observed significant **interannual variability**
+- Compared rainfall and temperature behavior
 
 ---
 
-## Tools and Technologies
+## 📈 Statistical Analysis
+### ✔️ ANOVA
+- Conducted one-way ANOVA to test differences in mean rainfall across months
+- Result: **Significant variation across months (p < 0.001)**
 
-- **Microsoft Excel** – Data cleaning and restructuring  
-- **rStudio** – Exploratory analysis and statistical testing  
-- **Python** – Predictive modeling and trend analysis  
-- **GitHub** – Version control and reproducibility  
-
----
-
-## Repository Contents
-
-- `Raw_Dataset.xlsx` – Original unmodified climate data  
-- `ghana_weather_final.csv` – Cleaned and analysis-ready dataset  
-- `README.md` – Project documentation  
-
-Additional scripts, figures, and reports will be added as analysis progresses.
+### ✔️ Tukey HSD
+- Identified specific months with statistically significant differences
+- Confirmed clear seasonal rainfall contrasts
 
 ---
 
-## Relevance
+## 🌦️ Climate Indices
+### ✔️ Rainfall Anomalies
+- Detected deviations from long-term average rainfall
+- Identified periods of unusually high and low rainfall
 
-This project demonstrates practical research and programming skills relevant to graduate-level study in:
+### ✔️ Standardized Precipitation Index (SPI)
+- Classified drought and wet periods
+- Highlighted temporal rainfall variability
 
-- Agricultural and Environmental Sciences  
-- Climate and Data Science  
-- Applied Statistics and Research Methods  
+### ✔️ Rainfall Concentration Index (RCI)
+- Showed rainfall is **moderately concentrated in specific months**
+- Confirms seasonal rainfall dependence
+
+### ✔️ Coefficient of Variation (CV)
+- Measured rainfall variability across months
+- Higher variability observed during peak rainy seasons
 
 ---
 
-## Author
+## 📉 Trend Analysis
+### ✔️ Linear Trend Analysis
+- Estimated monthly rainfall trends over time
+- Mixed trends observed across months
 
-**Elvis Frimpong**  
-Agricultural Data Scientist  
+### ✔️ Mann-Kendall Test
+- Confirmed statistically significant trends in selected months
+- Identified both increasing and decreasing rainfall patterns
+
+---
+
+## 🌡️ Rainfall–Temperature Relationship
+- Weak relationship observed between rainfall and temperature
+- **R² ≈ 0.0028**, indicating temperature alone is not a strong predictor of rainfall
+
+---
+
+## 🤖 Predictive Modeling
+### Model Features:
+- Average Temperature
+- Month (Seasonality)
+- Year (Trend)
+- Lagged Rainfall (Previous Month)
+
+### Model Performance:
+- **R² ≈ 0.078**
+- **RMSE ≈ 13.77 mm**
+
+### Key Insights:
+- Model captures **seasonal rainfall patterns**
+- Predictive power remains limited due to complex climate dynamics
+
+---
+
+## 🔮 Rainfall Projection (2040)
+- Generated monthly rainfall predictions for the year 2040
+- Used recursive approach with lagged rainfall
+- Results show:
+  - Increasing rainfall toward late months
+  - Underestimation of rainfall magnitude
+
+⚠️ *Predictions are indicative and should be interpreted with caution.*
+
+---
+
+## 🛠️ Tools and Technologies
+- Python (Pandas, NumPy, Matplotlib, Scikit-learn)
+- R (ggplot2, statistical tests)
+- Google Colab
+- Excel (data preprocessing)
+
+---
+
+## 📌 Key Takeaways
+- Rainfall in Ghana is **highly seasonal and variable**
+- Significant differences exist across months
+- Rainfall trends are **inconsistent across time**
+- Temperature alone does not explain rainfall variability
+- Simple models capture patterns but struggle with accuracy
+
+---
+
+## ⚠️ Limitations
+- Limited predictor variables
+- Absence of key climatic drivers (e.g., humidity, pressure)
+- Linear modeling assumptions
+- Recursive prediction introduces cumulative error
+
+---
+
+## 🚀 Future Improvements
+- Incorporate additional climate variables
+- Apply machine learning and time-series models
+- Expand dataset (longer time range, regional data)
+- Improve prediction accuracy
+
+---
+
+## 🌍 Applications
+- Agricultural planning
+- Water resource management
+- Climate risk assessment
+- Policy and decision-making
+
+---
+
+## 👤 Author
+**Frimpong Elvis**  
+Data Analyst | Agricultural Engineer  
+
+---
+
+## ⭐ If you found this useful
+Give this repo a star ⭐ and feel free to connect or collaborate!
