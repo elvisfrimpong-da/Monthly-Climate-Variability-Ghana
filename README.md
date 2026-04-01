@@ -32,18 +32,18 @@ The dataset consists of **180 monthly observations** of climate data in Ghana, i
 
 ---
 
-## 📈 Statistical Analysis
-### ✔️ ANOVA
+## Statistical Analysis
+### ANOVA
 - Conducted one-way ANOVA to test differences in mean rainfall across months
 - Result: **Significant variation across months (p < 0.001)**
 
-### ✔️ Tukey HSD
+### Tukey HSD
 - Identified specific months with statistically significant differences
 - Confirmed clear seasonal rainfall contrasts
 
 ---
 
-## 🌦️ Climate Indices
+##  Climate Indices
 ### ✔️ Rainfall Anomalies
 - Detected deviations from long-term average rainfall
 - Identified periods of unusually high and low rainfall
@@ -73,13 +73,13 @@ The dataset consists of **180 monthly observations** of climate data in Ghana, i
 
 ---
 
-## 🌡️ Rainfall–Temperature Relationship
+##  Rainfall–Temperature Relationship
 - Weak relationship observed between rainfall and temperature
 - **R² ≈ 0.0028**, indicating temperature alone is not a strong predictor of rainfall
 
 ---
 
-## 🤖 Predictive Modeling
+##  Predictive Modeling
 ### Model Features:
 - Average Temperature
 - Month (Seasonality)
@@ -96,14 +96,14 @@ The dataset consists of **180 monthly observations** of climate data in Ghana, i
 
 ---
 
-## 🔮 Rainfall Projection (2040)
+##  Rainfall Projection (2040)
 - Generated monthly rainfall predictions for the year 2040
 - Used recursive approach with lagged rainfall
 - Results show:
   - Increasing rainfall toward late months
   - Underestimation of rainfall magnitude
 
-⚠️ *Predictions are indicative and should be interpreted with caution.*
+ *Predictions are indicative and should be interpreted with caution.*
 
 ---
 
@@ -124,7 +124,7 @@ The dataset consists of **180 monthly observations** of climate data in Ghana, i
 
 ---
 
-## ⚠️ Limitations
+##  Limitations
 - Limited predictor variables
 - Absence of key climatic drivers (e.g., humidity, pressure)
 - Linear modeling assumptions
@@ -132,7 +132,7 @@ The dataset consists of **180 monthly observations** of climate data in Ghana, i
 
 ---
 
-## 🚀 Future Improvements
+##  Future Improvements
 - Incorporate additional climate variables
 - Apply machine learning and time-series models
 - Expand dataset (longer time range, regional data)
@@ -140,7 +140,7 @@ The dataset consists of **180 monthly observations** of climate data in Ghana, i
 
 ---
 
-## 🌍 Applications
+##  Applications
 - Agricultural planning
 - Water resource management
 - Climate risk assessment
@@ -148,7 +148,7 @@ The dataset consists of **180 monthly observations** of climate data in Ghana, i
 
 ---
 
-## 👤 Author
+##  Author
 **Frimpong Elvis**  
 Data Analyst | Agricultural Engineer  
 
